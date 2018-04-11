@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package decorator;
+package decorator.Starbuzz;
 
 /**
  *
@@ -16,7 +16,6 @@ public class Starbuzz {
         Soy soyalv = new Soy(es1);
         Hazelnut hz = new Hazelnut(soyalv);
         Large caf = new Large(hz);
-        System.out.println(caf.getDescription());
-        System.out.println(caf.cost());
+        System.out.println(caf.getDescription() + " $" + caf.cost());
     }
 }
